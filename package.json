@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Masayuki Sunahara <tamanishi@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.0.0",
