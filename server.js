@@ -28,13 +28,13 @@ app.post('/google-home-notifier', urlencodedParser, (req, res) => {
         text = "現在の温度は" + envObj.t + "度。湿度は" + envObj.h + "パーセント。気圧は" + envObj.p + "ヘクトパスカルです。";
       }
       googlehome.notify(text, () => {});
-      res.sendStatus(200);
-      res.send();
+      res.status(200);
+      res.send(text);
     });
   } catch(err) {
     let text = "何かしらエラーが発生しました。";
     console.log(err);
-    res.sendStatus(500);
+    res.status(500);
     res.send(err);
     googlehome.notify(text, () => {});
   }
