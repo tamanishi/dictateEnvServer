@@ -48,4 +48,5 @@ jspm_packages
 .yarn-integrity
 
 .env
+audio/*.wav
 
